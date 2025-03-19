@@ -8,40 +8,36 @@
 </head>
 <body>
     <header>
-        
+        <img src="assets/img/logo.png" alt="Blue Dog Care" class="logo">
     </header>
     <main>
         <section class="container">
             <div class="coluna">
                 <h2>Cliente</h2>
-                
+                <button onclick="navegar('cadastrar-tutor.html')">Cadastrar Tutor</button>
+                <button onclick="navegar('listar-tutor.html')">Listar Tutor</button>
+                <button onclick="navegar('listar-cachorro.html')">Listar Cachorro</button>
+            </div>
+            <div class="coluna">
+                <h2>Serviço</h2>
+                <button onclick="navegar('agendar-servico.html')">Agendar Serviço</button>
+                <button onclick="navegar('day-care.html')">Day Care</button>
+                <button onclick="navegar('atender-fisio.html')">Atender Fisioterapia</button>
+                <button onclick="navegar('atender-avaliacao.html')">Atender Avaliação</button>
+                <button onclick="navegar('gerenciar-pagamento.html')">Gerenciar Pagamentos</button>
+            </div>
+            <div class="coluna">
+                <h2>Gestão</h2>
+                <button onclick="navegar('cadastrar-funcionario.html')">Cadastrar Funcionário</button>
+                <button onclick="navegar('listar-funcionario.html')">Listar Funcionário</button>
+                <button onclick="navegar('historico-servicos.html')">Histórico de Serviços</button>
             </div>
         </section>
     </main>
+    <script>
+        function navegar(url) {
+            window.location.href= url;
+        }
+    </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
