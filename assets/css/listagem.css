@@ -24,7 +24,7 @@ section {
     width: 100%;
 }
 
-.container-tutor {
+.container {
     width: 80%;
     max-width: 900px;
     margin: 40px auto;
@@ -36,9 +36,7 @@ section {
     text-align: center;
 }
 
-.container-tutor h2,
-.container-cachorro h2,
-.container-funcionario h2 {
+.container h2 {
     text-align: left;
     color: #186bd9;
     margin: 10px;
