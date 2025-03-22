@@ -23,3 +23,131 @@ section {
     display: flex;
     width: 100%;
 }
+
+.container-tutor {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container-tutor h2,
+.container-cachorro h2,
+.container-funcionario h2 {
+    text-align: left;
+    color: #186bd9;
+    margin: 10px;
+}
+
+.busca-container {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin: 30px 0;
+} 
+
+.busca-container input {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscar {
+    padding: 8px 15px;
+    background-color: #186bd9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #186bd9;
+    color: white;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botoes-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botoes-esquerda button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.adicionar {
+    background-color: #99a63c;
+    color: black;
+}
+
+.agendar {
+    background-color: #77acf2;
+    color: black;
+}
+
+.info {
+    background-color: #f29bc4;
+}
+
+.botoes-direita {
+    display: flex;
+    height: 50%;
+    gap: 10px;
+}
+
+.botoes-direita button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.editar {
+    background-color: yellow;
+    color: black;
+}
+
+.excluir {
+    background-color: red;
+    color: black;
+}
+
+.buscar:hover,
+.adicionar:hover,
+.agendar:hover,
+.info:hover,
+.editar:hover,
+.excluir:hover {
+    opacity: 0.6;
+}
+

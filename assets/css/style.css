@@ -87,14 +87,8 @@ main {
     cursor: pointer;
 }
 
-.button-cliente:hover {
-    opacity: 0.8;
-}
-
-.button-servico:hover {
-    opacity: 0.8;
-}
-
+.button-cliente:hover,
+.button-servico:hover,
 .button-gestao:hover {
     opacity: 0.8;
 }
