@@ -54,15 +54,17 @@ section {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 17px;
 }
 
 .buscar {
     padding: 8px 15px;
-    background-color: #186bd9;
-    color: white;
+    background-color: #99a63c;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 17px;
 }
 
 table {

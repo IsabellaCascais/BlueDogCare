@@ -142,15 +142,16 @@ button {
 }
 
 .limpar {
-    background-color: #77acf2;
-    color: black;
-}
-
-.agendar {
     background-color: #f29bc4;
     color: black;
 }
 
+.agendar {
+    background-color: #77acf2;
+    color: black;
+}
+
+.botao-busca:hover,
 .limpar:hover,
 .agendar:hover {
     opacity: 0.6;

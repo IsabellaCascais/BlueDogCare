@@ -91,14 +91,14 @@ th {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .info {
-    background-color: #f29544;
+    background-color: #f29bc4;
     color: black;
 }
 
 .info:hover {
-    background-color: #f29bc4;
+    opacity: 0.6;
 }
