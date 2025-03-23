@@ -26,7 +26,7 @@ section {
 
 .container {
     width: 80%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 40px auto;
     flex-direction: column;
     background-color: white;
@@ -53,6 +53,7 @@ button {
     background-color: #99a63c;
     color: black;
     border: none;
+    border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
     margin-bottom: 15px;
@@ -69,8 +70,88 @@ button {
     font-size: 18px;
 }
 
+.linha-divisoria {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
 .container h2 {
     text-align: left;
     color: #186bd9;
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.servico h4 {
+    text-align: left;
+    font-size: 18px;
+}
+
+.servico-daycare {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin: auto 65px;
+}
+
+.servico-avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: auto 60px;
+}
+
+.servico-fisioterapia {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: auto 44px;
+}
+
+.select-group {
+    justify-content: left;
+}
+
+.servico input,
+.servico label,
+.servico select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.botoes button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.limpar {
+    background-color: #77acf2;
+    color: black;
+}
+
+.agendar {
+    background-color: #f29bc4;
+    color: black;
+}
+
+.limpar:hover,
+.agendar:hover {
+    opacity: 0.6;
 }

@@ -19,7 +19,7 @@
                 <div class="botao-busca">
                     <button type="button">Buscar tutor</button>
                 </div>
-                
+
                 <div class="selecao-cachorro">
                     <label for="cachorro">Selecione o cachorro do tutor(a): </label>
                     <select id="cachorro">
@@ -33,57 +33,76 @@
             <h2>Escolha o serviço:</h2>
 
             <div class="servico">
-                <input type="radio" id="daycare" name="daycare" value="daycare">
-                <label for="daycare">Day Care: </label>
-                <div class="radio-group">
-                    <input type="radio" id="segunda" name="daycare" value="segunda">
-                    <label for="segunda">Seg</label>
-                    <input type="radio" id="terca" name="daycare" value="terca">
-                    <label for="terca">Ter</label>
-                    <input type="radio" id="quarta" name="daycare" value="quarta">
-                    <label for="quarta">Qua</label>
-                    <input type="radio" id="quinta" name="daycare" value="quinta">
-                    <label for="quinta">Qui</label>
-                    <input type="radio" id="sexta" name="daycare" value="sexta">
-                    <label for="sexta">Sex</label>
+                <input type="radio" id="daycare" name="servico" value="daycare">
+                <h4>Day Care </h4>
+
+                <div class="servico-daycare">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="segunda" name="daycare" value="segunda">
+                        <label for="segunda">segunda</label>
+                        <input type="checkbox" id="terca" name="daycare" value="terca">
+                        <label for="terca">terça</label>
+                        <input type="checkbox" id="quarta" name="daycare" value="quarta">
+                        <label for="quarta">quarta</label>
+                        <input type="checkbox" id="quinta" name="daycare" value="quinta">
+                        <label for="quinta">quinta</label>
+                        <input type="checkbox" id="sexta" name="daycare" value="sexta">
+                        <label for="sexta">sexta</label>
+                    </div>
+
+                    <div class="select-group">
+                        <label for="pagamento">Plano de pagamento: </label>
+                        <select id="pagamento">
+                            <option value="">Selecione um plano</option>
+                            <option value="semanal">Semanal</option>
+                            <option value="semestral">Semestral</option>
+                        </select>
+                    </div>
                 </div>
-
-                <label for="pagamento">Plano de pagamento: </label>
-                <select id="pagamento">
-                    <option value="">Selecione um plano</option>
-                    <option value="semanal">Semanal</option>
-                    <option value="semestral">Semestral</option>
-                </select>
             </div>
 
             <div class="servico">
-                <input type="radio" id="avalicao" name="avalicao" value="avalicao">
-                <label for="avalicao">Avaliação: </label>
+                <input type="radio" id="avaliacao" name="servico" value="avaliacao">
+                <h4>Avaliação </h4>
 
-                <label for="dia-horario">Dia - Horário: </label>
-                <select id="avalicao">
-                    <option value="">Selecione</option>
-                </select>
+                <div class="servico-avaliacao">
 
-                <label for="veterinario-avaliacao">Veterinário: </label>
-                <select id="veterinario-avaliacao">
-                    <option value="">Selecione</option>
-                </select>
+                    <div class="select-group">
+                        <label for="dia-horario">Dia - Horário: </label>
+                        <select id="avaliacao">
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+
+                    <div class="select-group">
+                        <label for="veterinario-avaliacao">Veterinário: </label>
+                        <select id="veterinario-avaliacao">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
             <div class="servico">
-                <input type="radio" id="fisio" name="fisio" value="fisioterapia">
-                <label for="fisio">Fisioterapia: </label>
+                <input type="radio" id="fisio" name="servico" value="fisioterapia">
+                <h4>Fisioterapia </h4>
 
-                <label for="dia-horario">Dia - Horário: </label>
-                <select id="avalicao">
-                    <option value="">Selecione</option>
-                </select>
+                <div class="servico-fisioterapia">
 
-                <label for="veterinario-avaliacao">Veterinário: </label>
-                <select id="veterinario-avaliacao">
-                    <option value="">Selecione</option>
-                </select>
+                    <div class="select-group">
+                        <label for="dia-horario">Dia - Horário: </label>
+                        <select id="avaliacao">
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+
+                    <div class="select-group">
+                        <label for="veterinario-avaliacao">Veterinário: </label>
+                        <select id="veterinario-avaliacao">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
             <div class="botoes">
