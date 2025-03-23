@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lista de Tutor</title>
-    <link href="../assets/css/listagem.css" rel="stylesheet">
+    <title>Fisioterapia</title>
+    <link href="../assets/css/atender.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,35 +14,39 @@
 
     <section>
         <div class="container">
-            <h2>Lista de tutores cadastrados</h2>
-
-            <div class="busca-container">
-                <input type="text" id="busca" placeholder="Digite o nome do tutor para busca">
-                <button class="buscar">Buscar</button>
-            </div>
+            <h2>Lista de fisioterapias a serem realizadas</h2>
 
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Endereço</th>
-                        <th>Telefone</th>
+                        <th>ID fisioterapia</th>
+                        <th>Paciente</th>
+                        <th>Data agendada</th>
                     </tr>
                 </thead>
             </table>
 
-            <div class="botoes-container">
-                <div class="botoes-esquerda">
-                    <button class="adicionar">Adicionar Cachorro</button>
-                    <button class="agendar">Ir para Agendamento</button>
+            <form id="formAvaliacao">
+                <div class="form-group-sessao">
+                    <label for="sessao">Número de sessões: </label>
+                    <input type="number" id="sessao" name="sessao" min="1" required>
                 </div>
-                <div class="botoes-direita">
-                    <button class="editar">Editar</button>
-                    <button class="excluir">Excluir</button>
+                <div class="form-group">
+                    <label for="tratamento">Tratamento: </label>
+                    <input type="text" id="tratamento" name="tratamento" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="obs">Observações: </label>
+                    <textarea name="obs" rows="3"></textarea>
+                </div>
+                <div class="checkbox-container">
+                    <label for="realizado">Realizado? </label>
+                    <input type="checkbox" id="realizado" name="realizado">
+                </div>
+                <div class="botao-atender">
+                    <button class="atender" type="submit">Salvar</button>
+                </div>
+            </form>
         </div>
     </section>
 
