@@ -4,10 +4,10 @@
 Em desenvolvimento 
 
 ### Tecnologias Utilizadas
-- Java (Swing para interface gráfica)
-- MySQL (banco de dados relacional)
-- JDBC (conexão com o banco de dados)
-- Git e GitHub (controle de versão)
+- **HTML**: Estrutura básica das páginas web.
+- **CSS**: Estilização das páginas para melhorar a interface do usuário.
+- **JavaScript**: Funcionalidade interativa, como navegação.
+- **Git & GitHub**: Controle de versão e colaboração no desenvolvimento.
 
 ### Time de Desenvolvedores
 Isabella Cascais (Desenvolvedor(a) Principal)
@@ -21,4 +21,3 @@ O Blue Dog Care é um sistema de gerenciamento para um estabelecimento especiali
 ✔ Listagem de serviços agendados com status atualizado
 ✔ Pagamentos e confirmação de recebimento
 ✔ Gestão de funcionários e suas funções dentro do estabelecimento
-✔ Relatórios e listagem de serviços e pagamentos pendentes
