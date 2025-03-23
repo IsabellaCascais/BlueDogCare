@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lista de Tutor</title>
-    <link href="../assets/css/listagem.css" rel="stylesheet">
+    <title>Avaliação</title>
+    <link href="../assets/css/atender.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,35 +14,38 @@
 
     <section>
         <div class="container">
-            <h2>Lista de tutores cadastrados</h2>
-
-            <div class="busca-container">
-                <input type="text" id="busca" placeholder="Digite o nome do tutor para busca">
-                <button class="buscar">Buscar</button>
-            </div>
+            <h2>Lista de avaliações a serem realizadas</h2>
 
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Endereço</th>
-                        <th>Telefone</th>
+                        <th>ID da avaliação</th>
+                        <th>Paciente</th>
+                        <th>Data agendada</th>
                     </tr>
                 </thead>
             </table>
 
-            <div class="botoes-container">
-                <div class="botoes-esquerda">
-                    <button class="adicionar">Adicionar Cachorro</button>
-                    <button class="agendar">Ir para Agendamento</button>
+            <form id="formAvaliacao">
+                <div class="form-group">
+                    <label for="anamnese">Anamnese: </label>
+                    <textarea name="anamnese" rows="2" required></textarea>
                 </div>
-                <div class="botoes-direita">
-                    <button class="editar">Editar</button>
-                    <button class="excluir">Excluir</button>
+                <div class="form-group">
+                    <label for="recomendacao">Recomendação: </label>
+                    <input type="text" id="recomendacao" name="recomendacao" required>
                 </div>
-            </div>
+                <div class="checkbox-container">
+                    <label for="realizada">Realizado? </label>
+                    <input type="checkbox" id="castrado" name="castrado">
+                </div>
+                <div class="button-avaliacao">
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+
+
+
         </div>
     </section>
 
