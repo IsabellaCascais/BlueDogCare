@@ -1,1 +1,99 @@
-#186bd9
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento</title>
+    <link href="../assets/css/agendamento.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <section>
+        <div class="container">
+
+            <div class="busca-container">
+                <div class="botao-busca">
+                    <button type="button">Buscar tutor</button>
+                </div>
+                
+                <div class="selecao-cachorro">
+                    <label for="cachorro">Selecione o cachorro do tutor(a): </label>
+                    <select id="cachorro">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr class="linha-divisoria">
+
+            <h2>Escolha o serviço:</h2>
+
+            <div class="servico">
+                <input type="radio" id="daycare" name="daycare" value="daycare">
+                <label for="daycare">Day Care: </label>
+                <div class="radio-group">
+                    <input type="radio" id="segunda" name="daycare" value="segunda">
+                    <label for="segunda">Seg</label>
+                    <input type="radio" id="terca" name="daycare" value="terca">
+                    <label for="terca">Ter</label>
+                    <input type="radio" id="quarta" name="daycare" value="quarta">
+                    <label for="quarta">Qua</label>
+                    <input type="radio" id="quinta" name="daycare" value="quinta">
+                    <label for="quinta">Qui</label>
+                    <input type="radio" id="sexta" name="daycare" value="sexta">
+                    <label for="sexta">Sex</label>
+                </div>
+
+                <label for="pagamento">Plano de pagamento: </label>
+                <select id="pagamento">
+                    <option value="">Selecione um plano</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="semestral">Semestral</option>
+                </select>
+            </div>
+
+            <div class="servico">
+                <input type="radio" id="avalicao" name="avalicao" value="avalicao">
+                <label for="avalicao">Avaliação: </label>
+
+                <label for="dia-horario">Dia - Horário: </label>
+                <select id="avalicao">
+                    <option value="">Selecione</option>
+                </select>
+
+                <label for="veterinario-avaliacao">Veterinário: </label>
+                <select id="veterinario-avaliacao">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+
+            <div class="servico">
+                <input type="radio" id="fisio" name="fisio" value="fisioterapia">
+                <label for="fisio">Fisioterapia: </label>
+
+                <label for="dia-horario">Dia - Horário: </label>
+                <select id="avalicao">
+                    <option value="">Selecione</option>
+                </select>
+
+                <label for="veterinario-avaliacao">Veterinário: </label>
+                <select id="veterinario-avaliacao">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+
+            <div class="botoes">
+                <button class="limpar" type="submit">Limpar</button>
+                <button class="agendar" type="submit">Realizar agendamento</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
