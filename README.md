@@ -6,7 +6,7 @@ Em desenvolvimento
 ### Tecnologias Utilizadas
 - **HTML**: Estrutura básica das páginas web.
 - **CSS**: Estilização das páginas para melhorar a interface do usuário.
-- **JavaScript**: Funcionalidades interativas, como navegação.
+- **JavaScript**: Funcionalidade interativa, como navegação.
 - **Git & GitHub**: Controle de versão e colaboração no desenvolvimento.
 
 ### Time de Desenvolvedores
