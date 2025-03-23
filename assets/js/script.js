@@ -1,7 +1,3 @@
-function navegar(destino) {
-    window.location.href = destino;
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const servicos = document.querySelectorAll("input[name='servico']");
     const opcaoDayCare = document.getElementById("opcao-daycare");

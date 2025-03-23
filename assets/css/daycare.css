@@ -19,6 +19,21 @@ header {
     background-position: center;
 }
 
+.btn-voltar {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: #186bd9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-voltar:hover {
+    background-color: #125bb5;
+}
+
 section {
     display: flex;
     width: 100%;

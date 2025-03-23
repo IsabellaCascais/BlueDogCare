@@ -15,23 +15,27 @@
         <div class="container">
             <div class="coluna">
                 <h1>Cliente</h1>
-                <button class="button-cliente" onclick="navegar('cadastrar-tutor.html')">Cadastrar Tutor</button>
-                <button class="button-cliente" onclick="navegar('listar-tutor.html')">Listar Tutor</button>
-                <button class="button-cliente" onclick="navegar('listar-cachorro.html')">Listar Cachorro</button>
+                <button class="button-cliente" onclick="navegar('./pages/cadastrar-tutor.html')">Cadastrar
+                    Tutor</button>
+                <button class="button-cliente" onclick="navegar('./pages/listar-tutor.html')">Listar Tutor</button>
+                <button class="button-cliente" onclick="navegar('./pages/listar-cachorro.html')">Listar Cachorro</button>
             </div>
             <div class="coluna">
                 <h1>Serviço</h1>
-                <button class="button-servico" onclick="navegar('agendar-servico.html')">Agendar Serviço</button>
-                <button class="button-servico" onclick="navegar('day-care.html')">Day Care</button>
-                <button class="button-servico" onclick="navegar('atender-fisio.html')">Atender Fisioterapia</button>
-                <button class="button-servico" onclick="navegar('atender-avaliacao.html')">Atender Avaliação</button>
-                <button class="button-servico" onclick="navegar('gerenciar-pagamento.html')">Gerenciar Pagamentos</button>
+                <button class="button-servico" onclick="navegar('./pages/agendar-servico.html')">Agendar Serviço</button>
+                <button class="button-servico" onclick="navegar('./pages/day-care.html')">Day Care</button>
+                <button class="button-servico" onclick="navegar('./pages/atender-fisio.html')">Atender Fisioterapia</button>
+                <button class="button-servico" onclick="navegar('./pages/atender-avaliacao.html')">Atender Avaliação</button>
+                <button class="button-servico" onclick="navegar('./pages/gerenciar-pagamento.html')">Gerenciar
+                    Pagamentos</button>
             </div>
             <div class="coluna">
                 <h1>Gestão</h1>
-                <button class="button-gestao" onclick="navegar('cadastrar-funcionario.html')">Cadastrar Funcionário</button>
-                <button class="button-gestao" onclick="navegar('listar-funcionario.html')">Listar Funcionário</button>
-                <button class="button-gestao" onclick="navegar('historico-servicos.html')">Histórico de Serviços</button>
+                <button class="button-gestao" onclick="navegar('./pages/cadastrar-funcionario.html')">Cadastrar
+                    Funcionário</button>
+                <button class="button-gestao" onclick="navegar('./pages/listar-funcionario.html')">Listar Funcionário</button>
+                <button class="button-gestao" onclick="navegar('./pages/historico-servicos.html')">Histórico de
+                    Serviços</button>
             </div>
         </div>
     </main>
@@ -39,7 +43,11 @@
 
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script>
+        function navegar(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
 </body>
 
 </html>
