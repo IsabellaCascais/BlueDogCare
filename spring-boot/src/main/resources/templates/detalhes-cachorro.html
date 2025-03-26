@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Detalhes de Cachorro</title>
+        <link href="../css/confirma.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <div class="container">
+
+            <h2>Informações de <span th:text="${cachorro.nome}"></span></h2>
+
+            <p><strong>Nome:</strong> <span th:text="${cachorro.nome}"></span></p>
+            <p><strong>Sexo</strong> <span th:text="${cachorro.sexo}"></span></p>
+            <p><strong>Raça:</strong> <span th:text="${cachorro.raca}"></span></p>
+            <p><strong>Porte:</strong> <span th:text="${cachorro.porte}"></span></p>
+            <p><strong>Castrado:</strong> <span th:text="${cachorro.castrado}"></span></p>
+            <p><strong>Data de Nasc.:</strong> <span th:text="${cachorro.dataNasc}"></span></p>
+            <p><strong>Observações:</strong> <span th:text="${cachorro.obs}"></span></p>
+
+            <h3>Informações do Tutor</h3>
+            <p><strong>Nome do Tutor:</strong> <span th:text="${cachorro.tutor.nome}"></span></p>
+            <p><strong>CPF:</strong> <span th:text="${cachorro.tutor.cpf}"></span></p>
+            <p><strong>Endereço:</strong> <span th:text="${cachorro.tutor.endereco}"></span></p>
+            <p><strong>Telefone:</strong> <span th:text="${cachorro.tutor.telefone}"></span></p>
+
+            <div class="botao">
+                <button class="voltar" onclick="window.history.back()">Voltar para Lista</button>
+            </div>
+
+        </div>
+
+
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>

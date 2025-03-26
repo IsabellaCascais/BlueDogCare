@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fisioterapia</title>
+    <link href="./css/atender.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="voltar">
+        <a href="/" class="btn-voltar">⬅ Voltar para Início</a>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2>Lista de fisioterapias a serem realizadas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID fisioterapia</th>
+                        <th>Paciente</th>
+                        <th>Data agendada</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <form id="formAvaliacao">
+                <div class="form-group-sessao">
+                    <label for="sessao">Número de sessões: </label>
+                    <input type="number" id="sessao" name="sessao" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="tratamento">Tratamento: </label>
+                    <input type="text" id="tratamento" name="tratamento" required>
+                </div>
+                <div class="form-group">
+                    <label for="obs">Observações: </label>
+                    <textarea name="obs" rows="3"></textarea>
+                </div>
+                <div class="checkbox-container">
+                    <label for="realizado">Realizado? </label>
+                    <input type="checkbox" id="realizado" name="realizado">
+                </div>
+                <div class="botao-atender">
+                    <button class="atender" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de Tutor</title>
+        <link href="./css/listagem.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <div class="voltar">
+            <a href="/" class="btn-voltar">⬅ Voltar para Início</a>
+        </div>
+
+        <section>
+            <div class="container">
+                <h2>Lista de tutores cadastrados</h2>
+
+                <form method="GET" action="/listar-tutor">
+                    <input type="text" name="busca" placeholder="Digite o nome do tutor para busca" />
+                    <button type="submit">Buscar</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Endereço</th>
+                            <th>Telefone</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="tutor : ${tutores}">
+                            <td th:text="${tutor.id}"></td>
+                            <td th:text="${tutor.nome}"></td>
+                            <td th:text="${tutor.cpf}"></td>
+                            <td th:text="${tutor.endereco}"></td>
+                            <td th:text="${tutor.telefone}"></td>
+                            
+                            <td>
+                                <a th:href="@{'/cadastrar-cachorro/' + ${tutor.id}}" class="btn btn-adicionar">Adicionar
+                                    Cachorro</a>
+
+                                <div class="botoes-acao-dupla">
+                                    <a th:href="@{'/editar-tutor/' + ${tutor.id}}" class="btn btn-editar">Editar</a>
+                                    <a th:href="@{'/excluir-tutor/' + ${tutor.id}}" class="btn btn-excluir" 
+                                        onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>

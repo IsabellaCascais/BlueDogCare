@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cachorro</title>
+    <link href="../css/cadastro.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="voltar">
+        <a href="/listar-tutor" class="btn-voltar">⬅ Voltar para lista de tutores</a>
+    </div>
+
+    <section>
+        <div class="container-cachorro">
+            
+            <h2>Cadastrar Cachorro para <span th:text="${tutor.nome}"></span></h2>
+            
+            <form method="post" th:action="@{'/cadastrar-cachorro/' + ${tutor.id}}" th:object="${cachorro}">
+                
+                <input type="hidden" th:field="*{tutor.id}" />
+                
+                <div class="form-group">
+                    
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <div class="radio-group">
+                        <label>Sexo: </label>
+                        <label for="sexo-femea">
+                            <input type="radio" id="sexo-femea" name="sexo" value="F" required>
+                            fêmea
+                        </label>
+                        <label for="sexo-macho">
+                            <input type="radio" id="sexo-macho" name="sexo" value="M" required>
+                            macho
+                        </label>
+                    </div>
+                    
+                </div>
+                
+                <div class="form-group">
+                    <label for="raca">Raça: </label>
+                    <input type="text" id="raca" name="raca" required>
+
+                    <label for="porte">Porte: </label>
+                    <select id="porte" name="porte" required>
+                        <option value="">Selecione</option>
+                        <option value="pequeno">pequeno</option>
+                        <option value="medio">médio</option>
+                        <option value="grande">grande</option>
+                    </select>
+                </div>
+                <div class="form-group"> 
+                    <div class="radio-group">
+                        <label>Castrado(a)? </label>
+                        <label for="castrado-sim">
+                            <input type="radio" id="castrado-sim" name="castrado" value="sim" required>
+                            sim
+                        </label>
+                        <label for="castrado-nao">
+                            <input type="radio" id="castrado-nao" name="castrado" value="nao" required>
+                            não
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nascimento">Data de nascimento: </label>
+                    <input type="text" id="dataNasc" name="dataNasc" th:value="${cachorro.dataNasc}" required placeholder="xx/xx/xxxx">
+                </div>
+                <div class="form-group">
+                    <label for="obs">Observações: </label>
+                    <textarea name="obs"></textarea>
+                </div>
+                <div class="button-cliente">
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#dataNasc').mask('00/00/0000');
+            });
+        </script>
+</body>
+
+</html>

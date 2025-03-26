@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação</title>
+    <link href="./css/atender.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="voltar">
+        <a href="/" class="btn-voltar">⬅ Voltar para Início</a>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2>Lista de avaliações a serem realizadas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID da avaliação</th>
+                        <th>Paciente</th>
+                        <th>Data agendada</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <form id="formAvaliacao">
+                <div class="form-group">
+                    <label for="anamnese">Anamnese: </label>
+                    <textarea name="anamnese" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recomendacao">Recomendação: </label>
+                    <input type="text" id="recomendacao" name="recomendacao" required>
+                </div>
+                <div class="checkbox-container">
+                    <label for="realizado">Realizado? </label>
+                    <input type="checkbox" id="realizado" name="realizado">
+                </div>
+                <div class="botao-atender">
+                    <button class="atender" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

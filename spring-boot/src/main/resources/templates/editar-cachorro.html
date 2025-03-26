@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cachorro</title>
+    <link href="../css/cadastro.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="voltar">
+        <a href="/listar-tutor" class="btn-voltar">⬅ Voltar para lista de tutores</a>
+    </div>
+
+    <section>
+        <div class="container-cachorro">
+            
+            <h2>Editar Cachorro></span></h2>
+            
+            <form th:action="@{/editar-cachorro/{id}(id=${cachorro.id})}" method="post" th:object="${cachorro}">
+                
+                <input type="hidden" th:field="*{id}" />
+                
+                <input type="hidden" th:field="*{tutor.id}" />
+                
+                <div class="form-group">
+                    
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" th:field="*{nome}" required>
+                    
+                    <div class="radio-group">
+                        <label>Sexo: </label>
+                        <label for="sexo-femea">
+                            <input type="radio" id="sexo-femea" name="sexo" value="F" th:checked="${cachorro.sexo == 'F'}">
+                            fêmea
+                        </label>
+                        <label for="sexo-macho">
+                            <input type="radio" id="sexo-macho" name="sexo" value="M" th:checked="${cachorro.sexo == 'M'}">
+                            macho
+                        </label>
+                    </div>
+                    
+                </div>
+                
+                <div class="form-group">
+                    <label for="raca">Raça: </label>
+                    <input type="text" id="raca" name="raca" th:field="*{raca}" required>
+
+                    <label for="porte">Porte: </label>
+                    <select id="porte" th:field="*{porte}" required>
+                        <option value="">Selecione</option>
+                        <option value="pequeno" th:selected="${cachorro.porte == 'pequeno'}">pequeno</option>
+                        <option value="medio" th:selected="${cachorro.porte == 'medio'}">médio</option>
+                        <option value="grande" th:selected="${cachorro.porte == 'grande'}">grande</option>
+                    </select>
+                </div>
+                <div class="form-group"> 
+                    <div class="radio-group">
+                        <label>Castrado(a)? </label>
+                        <label for="castrado-sim">
+                            <input type="radio" id="castrado-sim" name="castrado" value="sim" th:checked="${castrado}">
+                            sim
+                        </label>
+                        <label for="castrado-nao">
+                            <input type="radio" id="castrado-nao" name="castrado" value="nao" th:checked="${castrado}">
+                            não
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nascimento">Data de nascimento: </label>
+                    <input type="text" id="dataNasc" name="dataNasc" th:field="*{dataNasc}" required placeholder="xx/xx/xxxx">
+                </div>
+                <div class="form-group">
+                    <label for="obs">Observações: </label>
+                    <textarea name="obs" th:field="*{obs}"></textarea>
+                </div>
+                <div class="button-cliente">
+                    <button type="submit">Salvar</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#dataNasc').mask('00/00/0000');
+            });
+        </script>
+</body>
+
+</html>

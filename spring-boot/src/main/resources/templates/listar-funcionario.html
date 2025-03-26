@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Funcionário</title>
+    <link href="./css/listagem.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+    </header>
+
+    <div class="voltar">
+        <a href="/" class="btn-voltar">⬅ Voltar para Início</a>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2>Lista de funcionários cadastrados</h2>
+
+            <div class="busca-container">
+                <input type="text" id="busca" placeholder="Digite o nome do funcionário para busca">
+                <button class="buscar">Buscar</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernanda Ribeiro</td>
+                        <td>852.415.966-88</td>
+                        <td>Rua das Araras, 158</td>
+                        <td>(31)99988-7766</td>
+                        <td>fernanda@email.com</td>
+                        <td>Veterinária</td>
+                    </tr>
+                    <tr>
+                        <td>Henrique Vaz</td>
+                        <td>104.633.986-22</td>
+                        <td>Rua das Amoras, 784</td>
+                        <td>(31)99258-6258</td>
+                        <td>henrique@email.com</td>
+                        <td>Recreador</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="botoes-container">
+                <div class="botoes-esquerda"> 
+                </div>
+                <div class="botoes-direita">
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

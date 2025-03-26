@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento</title>
+    <link href="./css/pagamento.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="voltar">
+        <a href="/" class="btn-voltar">⬅ Voltar para Início</a>
+    </div>
+
+    <section>
+        <div class="container">
+
+            <h2>Gerenciamento de Pagamentos</h2>
+
+            <div class="busca">
+                <label for="busca-tutor">Buscar tutor: </label>
+                <input type="text" id="busca-tutor" placeholder="Digite o nome do tutor">
+            </div>
+
+            <div class="tabela">
+                <table class="tabela-pagamentos">
+                    <thead>
+                        <tr>
+                            <th>Tutor</th>
+                            <th>Cachorro</th>
+                            <th>Serviço</th>
+                            <th>Valor</th>
+                            <th>Data do Pagamento</th>
+                            <th>Método</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>Rex</td>
+                            <td>DayCare</td>
+                            <td>R$ 300,00</td>
+                            <td>15/03/2024</td>
+                            <td>PIX</td>
+                            <td>Pago</td>
+                        </tr>
+                        <tr>
+                            <td>Ana Souza</td>
+                            <td>Luna</td>
+                            <td>Fisioterapia</td>
+                            <td>R$ 150,00</td>
+                            <td>20/03/2024</td>
+                            <td>Cartão</td>
+                            <td>Pendente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="botoes-container">
+                <div class="botoes-esquerda"> 
+                    <button class="info">Exibir informações</button>
+                </div>
+                <div class="botoes-direita">
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

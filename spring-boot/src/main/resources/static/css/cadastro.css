@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #77acf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/logo.png");
+    background-color: #186bd9;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: #186bd9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-voltar:hover {
+    background-color: #125bb5;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+.container-tutor {
+    display: flex;
+    width: 400px;
+    margin: 40px auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-cachorro {
+    display: flex;
+    width: 580px;
+    margin: 40px auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-funcionario {
+    display: flex;
+    width: 500px;
+    margin: 40px auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-tutor h2,
+.container-cachorro h2,
+.container-funcionario h2 {
+    text-align: center;
+    color: #186bd9;
+    margin: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-group label {
+    width: 30%;
+    text-align: right;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-cliente,
+.button-cachorro,
+.button-funcionario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 15px;
+    background-color: #f29544;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f29bc4;
+}

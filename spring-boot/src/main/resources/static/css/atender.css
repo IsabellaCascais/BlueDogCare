@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #77acf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/logo.png");
+    background-color: #186bd9;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: #186bd9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-voltar:hover {
+    background-color: #125bb5;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    text-align: left;
+    color: #186bd9;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #186bd9;
+    color: white;
+}
+
+.form-group-sessao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.form-group-sessao label,
+.form-group label,
+.checkbox-container label {
+    text-align: left;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.form-group-sessao input {
+    width: 60px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.botao-atender {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-atender button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.atender {
+    background-color: #f29544;
+    color: black;
+}
+
+.atender:hover {
+    background-color: #f29bc4;
+}

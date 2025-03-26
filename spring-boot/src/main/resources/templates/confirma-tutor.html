@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sucesso</title>
+        <meta charset="UTF-8">
+        <link href="./css/confirma.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <div class="container">
+            <h2>Tutor cadastrado com sucesso!</h2>
+
+            <p>Nome: <span th:text="${tutor.nome}"></span></p>
+            <p>CPF: <span th:text="${tutor.cpf}"></span></p>
+            <p>Endereço: <span th:text="${tutor.endereco}"></span></p>
+            <p>Telefone: <span th:text="${tutor.telefone}"></span></p>
+
+            <div class="botao">
+                <button class="voltar" onclick="navegar('/listar-tutor')">Voltar para Lista</button>
+            </div>
+            
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
